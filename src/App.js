@@ -20,18 +20,12 @@ function App() {
 
 
   return (
-    <div>
-      <h1 className='title is-2 mt-5' style={{textAlign: "center"}}>Color Channel Separator</h1>
+    <div className="SiteBox has-text-light">
+      <h1 className='title is-2 mt-5 has-text-light' style={{textAlign: "center"}}>Color Channel Separator</h1>
       <Dropdown onModeChange={handleModeChange}/>
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh'
-      }}>
+      <div className="Images">
         <MainImage onImageChange={handleImageChange} />
-        {image && <ChannelImages imageSrc={image} mode={mode} />}
+        {image && <ChannelImages imageSrc={image} mode={mode}/>}
       </div>
     </div>
   );

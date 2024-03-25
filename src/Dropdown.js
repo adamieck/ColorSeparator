@@ -9,9 +9,9 @@ export const Dropdown = ({onModeChange}) => {
   };
 
   return (
-    <div>
+    <div className='Dropdown'>
       <div className="field ml-5">
-        <label className="label">Select mode:</label>
+        <label className="label has-text-light">Select mode:</label>
         <div className="control">
           <div className="select">
             <select onChange={handleDropdownChange} value={selectedOption}>
@@ -25,7 +25,7 @@ export const Dropdown = ({onModeChange}) => {
 
       {selectedOption && (
         <div>
-          {/* Modify your state or perform any other action based on the selected option */}
+          {}
         </div>
       )}
     </div>

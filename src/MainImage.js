@@ -80,13 +80,14 @@ export const MainImage = ({ onImageChange }) => {
     };
 
     return (
-        <div>
+        <div className="Images">
             {selectedImage && (
                 <div>
                     <img
                         alt="not found"
                         width={"600px"}
                         src={URL.createObjectURL(selectedImage)}
+                        className="Image"
                     />
                     <br />
                 </div>
@@ -117,7 +118,7 @@ export const MainImage = ({ onImageChange }) => {
             </div>
             <br />
 
-            <button className="button is-primary" onClick={createImage}>Create Image</button>
+            <button className="button PurpleButton" onClick={createImage}>Create Image</button>
 
             <br />
 

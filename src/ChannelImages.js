@@ -178,7 +178,7 @@ export const ChannelImages = ({ imageSrc, mode }) => {
   };
 
   return (
-    <div>
+    <div className='Images'>
       {mode === "Lab" &&
         <div>
           <div style={{ display: 'flex', gridGap: '5px', alignItems: 'center' }}>
@@ -223,8 +223,8 @@ export const ChannelImages = ({ imageSrc, mode }) => {
               <input className="input" name="Zw" type="number" onChange={handleChange} value={labParams.Zw} />
             </label>
           </div>
-          <div className='buttons is-centered'>
-            <button className="button is-primary" type="button" style={{ alignContent: "center" }} onClick={handleApplyClick}>
+          <div className='buttons is-centered mt-3'>
+            <button className="button PurpleButton" type="button" style={{ alignContent: "center" }} onClick={handleApplyClick}>
               Apply
             </button>
           </div>
